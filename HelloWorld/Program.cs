@@ -14,20 +14,28 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-         
 
-            // Variablendeklaration: <Datentyp> <Bezeichner>    
-            string name;
-            int alter;
-            double größe;
-            //decimal
-            //bool (True oder False, z.B. bool istWeiblich)
-            //...
 
-            // Variableninitialisierung: <Bezeichner> = <Wert>;   
+            // Variablendeklaration: <Datentyp> <Bezeichner>   (camel case, beginnend mit Buchstabe)  
+
+            string name;    // string, aus alphanumerischen Characters
+            int alter;      // integer, ganzzahlig
+            double größe;   // Precision 15-17 digits, vielleicht der Standard, wenn mit der Zahl gerechnet werden soll?
+
+           
+            // Variablensetting: <Bezeichner> = <Wert>; heißt auch value assignment  
             name = "Susann";
             alter = 49;
             größe = 1.55;
+
+
+            // Variableninitialisierung = beides zusammen
+            float beispielFloat = 1.55F;    // Precision nur 6-9 digits, am besten nur für feste Dezimalzahlen, mit denen nicht gerechnet wird
+            decimal beispielDecimal = 1.55M;  // Precision 28-29 digits, lt Microsoft Learn der Standard, wenn mit der Zahl gerechnet werden soll 
+            bool istWeiblich = true;    // Boolean True oder False
+            char rating = 'B';          // einzelner alphanumerischer Character, in single quotes
+            //...
+
 
 
 
