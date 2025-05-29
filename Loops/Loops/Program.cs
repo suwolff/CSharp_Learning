@@ -55,14 +55,41 @@ namespace Loops
 
             // foreach Loop                            //Vorteil: Klammer kürzer; Nachteil: z.B. kein Zugriff auf [i-1], keine Option, den Wert eines Eintrags zu ändern
             Console.WriteLine("foreach Loop");
-            ages = new int[] { 9, 49, 44 };            //Array initialisiert
+            ages = new int[] { 9, 49, 44 };            //Array initialisiert //noch kürzer: int[] ages = [ 9, 49, 44]
             foreach (int a in ages)                    //a = Wert in Array       
             {
                 Console.WriteLine(a);
             }
 
+            Console.Read();
+
+
+            // MSLearn foreach loop exercise
+            int[] inventory = { 200, 450, 700, 175, 250 };
+            int sum = 0;
+            int bin = 0;
+            foreach (int i in inventory)
+            {
+                sum += i;
+                bin++;
+                Console.WriteLine($"Bin {bin} = {i} items (Running total: {sum})");
+            }
+            Console.WriteLine($"We have {sum} items in inventory.");
 
             Console.Read();
+
+            // MSLearn foreach loop challenge
+            string[] orderIDs = [ "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" ];
+            foreach (string id in orderIDs)
+            { 
+                if (id.StartsWith('B'))     // StartsWith() = string method
+                {
+                    Console.WriteLine(id);
+                }
+            }
         }
+
+
+         
     }
 }
