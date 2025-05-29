@@ -84,7 +84,7 @@ int course5Credit = 3;
 int totalCreditHours = course1Credit + course2Credit + course3Credit + course4Credit + course5Credit;
 
 int totalGradePoints = 0;
-totalGradePoints += course1Credit * course1Grade; //mehr Text, abere übersichtlicher als lange Reihe
+totalGradePoints += course1Credit * course1Grade; //mehr Text, aber übersichtlicher als lange Reihe
 totalGradePoints += course2Credit * course2Grade;
 totalGradePoints += course3Credit * course3Grade;
 totalGradePoints += course4Credit * course4Grade;
